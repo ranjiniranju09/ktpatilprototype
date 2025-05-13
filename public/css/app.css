@@ -1,0 +1,113 @@
+/* File Scanning for PurgeCSS (for older Tailwind versions) */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Theme Customizations */
+/* :root {
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+} */
+
+/* ============ Custom Components CSS ============ */
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Inter', sans-serif; */
+}
+
+header {
+  width: 100%;
+  position: fixed;
+}
+
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+
+.video-container1 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  margin: 20px 0; /* Optional: Add some margin for spacing */
+}
+
+.video-container1 video {
+  max-width: 70%; /* Make sure the video is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* ============ Responsive CSS ============ */
+
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left h2 {
+    font-size: 1.5rem;
+  }
+
+  .statistics .container,
+  .program-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-item {
+    width: 100%;
+  }
+
+  .statistics .container,
+  .programs .container,
+  .events-news .container,
+  .alumni .container,
+  .contact-form .container {
+    padding: 0 10px;
+  }
+
+  .confluence-section {
+    padding: 30px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    height: 50vh;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .topbar, .main-navbar {
+    padding: 5px;
+  }
+
+  .btn-get-in-touch, 
+  .main-navbar ul li a,
+  .search-box input {
+    font-size: 1rem;
+  }
+
+  .apply-now {
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+}

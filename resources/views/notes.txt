@@ -1,0 +1,58 @@
+things needed for website 
+
+1) governing body members photo . 
+2)breif about college. 
+3)academic calendar.
+4) list of events which already conduction . 
+5) alumni feedbacks
+6) placements details if there is any 
+7)  admission
+8) infrastructure 
+9) fees structure for UG courses
+10) any color priority ?
+11) offitial mail id 
+
+//vision with image in circle 
+<div class="containervision">
+    <div class="grid">
+      <div class="left-columnvision">
+        <div>
+          <p class="title-smallvision">K.T.Patil College of Engineering and Technology</p>
+        </div>
+        <div class="circle-image-large">
+          <img src="https://storage.googleapis.com/a1aa/image/5466ce06-257d-4588-7d0b-faca57e26b11.jpg" alt="Bird's eye view of university stadium and surrounding buildings" width="400" height="400" />
+          <div class="circle-image-small-wrapper">
+            <img src="https://storage.googleapis.com/a1aa/image/a8982ac3-a1c8-4609-7839-ad2a25be9194.jpg" alt="Smaller circular image of university stadium and buildings from above" width="140" height="140" />
+          </div>
+          <svg class="dotted-circle-svg" aria-hidden="true" fill="none" viewBox="0 0 400 400">
+            <circle cx="200" cy="200" r="200" stroke="#D9D9D9" stroke-dasharray="1 7" stroke-width="1"></circle>
+          </svg>
+        </div>
+      </div>
+      <div class="right-columnvision">
+        <div class="section-blockvision">
+          <p class="section-title-normalvision">Our</p>
+          <p class="section-title-boldvision">Vision</p>
+        </div>
+        <p class="paragraphvision">
+          To provide quality in all spheres of higher learning in general, and Health services in particular, to all, including those in rural and urban areas of the nation, keeping in view the societal needs in the global context.
+        </p>
+        <div class="section-blockvision">
+          <p class="section-title-normalvision">Our</p>
+          <p class="section-title-boldvision">Mission</p>
+        </div>
+        <p class="paragraphvision">
+          To foster an environment of academic excellence, innovation, and social responsibility, empowering students to become leaders and contributors to society through quality education and research.
+        </p>
+      </div>
+    </div>
+</div>
+
+
+reference websites : 
+    https://www.bvuniversity.edu.in/
+    https://dypatil.edu/
+
+reference links :
+    https://teamforstu-my.sharepoint.com/:w:/g/personal/zindu_teamforstu_onmicrosoft_com/EdMIah6DVbJIiOvwYPhEhxUBsHOvXwman8uR6HAI-hFHFw?e=QZkAzC
+    https://docs.google.com/spreadsheets/d/1_76pfLiwcWQvoVX5qY9ARrNzJoPIAcFrsThLfaJM0Ss/edit?gid=0#gid=0
