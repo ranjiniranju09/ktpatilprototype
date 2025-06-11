@@ -7,9 +7,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .hero {
-    position: relative;
+    /* position: relative; */
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -20,17 +20,19 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
-    z-index: 1;
+    /* background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)); */
+    z-index: -2;
 }
 
 .hero-image img {
+    position: relative;
+    z-index: -2;
     width: 100%;
     height: 100vh;
     object-fit: cover;
     display: block;
-    animation: zoomIn 15s ease-in-out infinite alternate;
-}
+     animation: zoomIn 15s ease-in-out infinite alternate;
+ } 
 
 .hero-text {
     position: absolute;
@@ -39,7 +41,7 @@
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    z-index: 2;
+    z-index: -1;
     padding: 30px 40px;
     border-radius: 12px;
     animation: fadeInUp 1.2s ease-in-out;
@@ -73,6 +75,7 @@
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
+    z-index: -1;
 }
 
 .hero-text .cta-btn:hover {
@@ -127,17 +130,12 @@
         <div class="hero-text">
             <div class="welcome">Welcome</div>
             <div class="college">KT Patil College of Engineering</div>
-            <a href="#confluence" class="cta-btn">Explore </a>
+            <!-- <a href="#confluence" class="cta-btn">Explore </a> -->
         </div>
         <section class="hero-image">
-            <img src="{{ asset('images/kycolg.jpg') }}" alt="Hero Image" class="img-fluid w-100">
+            <img src="{{ asset('images/kycolg.jpg') }}" alt="Hero Image" >
         </section>
     </div>
-
-
-
-
-
 
     {{-- Video Section --}}
     {{--<div class="video-container">
@@ -153,10 +151,10 @@
     </div>
     {{-- Other Sections --}}
     {{--@include('components.statistics')--}}
-    {{--@include('components.leadership')--}}
-     @include('components.programs')
-    @include('components.international-collaborations')
-    @include('components.events-news')
+    @include('components.leadership')
+    @include('components.programs')
+    {{--@include('components.international-collaborations')--}}
+    {{--@include('components.events-news')--}}
     @include('components.contact-form')
 </div>
 

@@ -14,6 +14,13 @@
     a:hover {
       text-decoration: none;
     }
+     .breadcrumb{
+      display: flex;
+      list-style: none;
+      padding: 20px 15px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
 
     /* Header cover section */
     .cover {
@@ -45,9 +52,19 @@
       font-weight: 300;
       text-shadow: 0 0 6px rgba(34, 40, 49, 0.8);
     }
+    h2{
+      font-weight: 700;
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+      color: #0a1930;
+      text-align: center;
+      position: relative;
+      /* z-index: 0; */
+    }
 
     /* Tabs navigation */
     .nav-tabs {
+      
       border-bottom: 3px solid rgb(150, 37, 37);
       margin-top: 10px;
       max-width: 960px;
@@ -77,6 +94,8 @@
     .nav-tabs .nav-link:hover {
       color:rgb(150, 37, 37);
       background-color: #e9f0ff;
+      position: relative;
+      z-index: -0;
     }
 
     /* Section Containers */
@@ -137,6 +156,18 @@
       font-size: 1.1rem;
       line-height: 1;
     }
+    .card-img-top {
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+    }
+    .img-fluid {
+        transition: transform 0.3s ease;
+    }
+    .img-fluid:hover {
+        transform: scale(1.05);
+    }
+    
+
 
     /* Responsive adjustments */
     @media (max-width: 576px) {
@@ -158,15 +189,7 @@
 
 
 <div class="container-computer">
-    <!-- Breadcrumbs -->
-    <!-- <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Departments</a></li>
-            <li class="breadcrumb-item active" aria-current="page">B.Tech Computer Science</li>
-        </ol>
-    </nav> -->
-
+    
     <!-- Accordion Layout -->
     <div class="cover">
         <h1>Electrical and Electronics Engineering Department</h1>
@@ -174,12 +197,27 @@
         Harnessing electrical energy is the challenge for electrical engineers. The power-packed EEE department inspires the budding Electrical Engineers with the potent idea of constructing Generating Stations, Transmission Lines and Distribution Systems at economic rates and to design, test and supervise the manufacture of Electrical and Electronic equipment used in electrical utilities, buildings, automobiles, aircraft, radar, navigation systems and broadcast and communication systems.
         </p>
     </div>
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('home')}}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ route('department') }}">Departments</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Electrical & Electrocnics Engineering</li>
+        </ol>
+    </nav>
+
 
     <!-- Tab Navigation -->
     <nav>
         <ul class="nav nav-tabs justify-content-center" id="eeeDeptTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="hod-tab" data-toggle="tab" href="#hod" role="tab" aria-controls="hod" aria-selected="true">HOD Message</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="faculty-tab" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
+        </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="true">Vision</a>
+            <a class="nav-link" id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="true">Vision</a>
         </li>
         <li class="nav-item" role="presentation">
             <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
@@ -191,14 +229,25 @@
             <a class="nav-link" id="labs-tab" data-toggle="tab" href="#labs" role="tab" aria-controls="labs" aria-selected="false">Laboratory Facilities</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="faculty-tab" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
+            <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
         </li>
+
         </ul>
     </nav>
 
     <main class="tab-content" id="deptTabContent" style="max-width: 960px; margin: 1rem auto 3rem;">
 
-        <section class="tab-pane fade show active" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+    <section class="tab-pane fade show active" id="hod" role="tabpanel" aria-labelledby="hod-tab">
+      <h2>Message from HOD</h2>
+      <p>
+          Harnessing electrical energy is the challenge for electrical engineers. The power-packed EEE department inspires the budding Electrical Engineers with the potent idea of constructing Generating Stations, Transmission Lines and Distribution Systems at economic rates and to design, test and supervise the manufacture of Electrical and Electronic equipment used in electrical utilities, buildings, automobiles, aircraft, radar, navigation system and broadcast and communication systems.
+      </p>
+      <p class="mt-4 font-weight-bold">Prof. Bawane Rohan Pradip (ME EEE)</p>
+      <p class="text-muted">HOD, EEE Department</p>
+    </section>
+
+
+        <section class="tab-pane fade " id="vision" role="tabpanel" aria-labelledby="vision-tab">
             <h2>Vision</h2>
             <p>
             To be a leader in electrical and electronics engineering education and training by producing globally competent graduates who excel in their chosen careers and are successfully involved in innovative research and entrepreneurship with a strong commitment towards societal development.
@@ -270,32 +319,60 @@
                 <li>Power Electronics Laboratory</li>
             </ul>
             </section>
-            <section class="tab-pane fade text-center" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
-                <h2>Faculty Directory</h2>
-                <img
-                src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=200"
-                alt="Prof. Gaikwad Shweta Kundlik"
-                    class="rounded-circle mb-3"
-                    style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #254896;"
-                />
-                <h5>Prof. Bawane Rohan Pradip</h5>
-                <p class="font-italic mb-1">HOD EEE Department</p>
-                <p>K.T. Patil College Of Engineering &amp; Technology, Dharashiv</p>
+            <section class="tab-pane fade" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
+              <h2>Faculty Directory</h2>
+
+              <!-- Faculty Table -->
+              <div class="table-responsive">
+                  <table class="table table-bordered table-striped align-middle">
+                      <thead class="table-dark">
+                          <tr>
+                              <th scope="col">Sr. No.</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Designation</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>Rohan P. Bawane</td>
+                              <td>HOD</td>
+                          </tr>
+                          <tr>
+                              <td>2</td>
+                              <td>Mrs. Rameshwari B. Yadhav</td>
+                              <td>Assistant Professor</td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>Mr. Mohit B. Bawane</td>
+                              <td>Assistant Professor</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </section>
+          
+            <!-- Gallery -->  
+          <section class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                <h2>Department Gallery</h2>
+                <div class="row g-4 mt-4">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card shadow-sm border-0">
+                            <img src="{{ asset('images/gallery/transformor&DC_lab.jpg') }}" alt="Transformer Lab" class="card-img-top rounded" >
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card shadow-sm border-0">
+                            <img src="{{ asset('images/gallery/transformor&DC_lab1.jpg') }}" alt="Transformer Lab 2" class="card-img-top rounded" >
+                        </div>
+                    </div>
+                </div>
             </section>
+
         </div>
     </main>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    </main>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 @endsection

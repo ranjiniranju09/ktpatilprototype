@@ -10,8 +10,22 @@
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
-    padding-top: 160px;
+    padding-top: 50px;
     
+}
+.cover {
+    background: linear-gradient(
+        rgba(114, 12, 12, 0.85),
+        rgba(144, 5, 5, 0.85)
+    ), url("https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
+    color: #e0e7ff;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
 }
 
 .course {
@@ -40,17 +54,13 @@
     height: 350px; /* Set a fixed height for uniformity */
 }
 
+
 .card-footer {
     margin-top: auto; /* Pushes the footer to the bottom of the card */
     padding-top: 1rem; /* Adds some space above the footer */
     border-top: 1px solid #e0e0e0; /* Optional: adds a top border for separation */
 }
 
-/* .course-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    overflow: hidden;
-} */
 
 .course-card h3 {
     font-size: 1.5rem;
@@ -103,15 +113,17 @@
 
 .breadcrumb {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     list-style: none;
-    padding: 150px;
-    margin: 0 0 1rem;
+    padding: 20px;
+    /* margin: 0 0 1rem; */
     overflow: hidden;
+    flex: 1 1 250px; /* Flex-grow/shrink and basis for responsiveness */
+    flex-wrap: wrap;
+    word-break: break-word;
+
 }
 
 .breadcrumb-item {
-    position: relative;
     margin-right: 0.5rem; /* Space between items */
 }
 
@@ -184,15 +196,22 @@
 }
 </style>
 
-<!-- <nav aria-label="Breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Courses</a></li>
-        <li class="breadcrumb-item active" aria-current="page">UG Course</li>
-    </ol>
-</nav> -->
 <div class="containerall">
-    <div id="ug"> <h1 class="course-heading">UG course</h1>
+    <div class="cover">
+        <h1>Courses</h1>
+        <p class="text-center">Discover the diverse fields of study and research opportunities available at our institution.</p>
+    </div>
+    <div class="container">
+        <nav class="navigation" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ url('/home') }}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">All Courses</li>
+            </ol>
+        </nav>
+
+    </div>
+    <div id="ug"> 
+        <h1 class="course-heading">UG course</h1>
         <div class="course">
             <div class="course-card">
                 <h3>Computer Science Engineering</h3>

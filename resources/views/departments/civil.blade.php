@@ -14,6 +14,13 @@
     a:hover {
       text-decoration: none;
     }
+     .breadcrumb{
+      display: flex;
+      list-style: none;
+      padding: 20px 15px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
 
     /* Header cover section */
     .cover {
@@ -45,6 +52,7 @@
       font-weight: 300;
       text-shadow: 0 0 6px rgba(34, 40, 49, 0.8);
     }
+
 
     /* Tabs navigation */
     .nav-tabs {
@@ -116,28 +124,43 @@
       margin-top: 1rem;
     }
     ul.list-icon li {
-      position: relative;
-      padding-left: 36px;
-      margin-bottom: 14px;
-      color: #343a40;
-      font-weight: 500;
-      font-size: 1rem;
-      transition: color 0.2s ease;
+  position: relative;
+  padding-left: 24px; /* reduced from 36px */
+  margin-bottom: 14px;
+  color: #343a40;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+ul.list-icon li::before {
+  /* content: "✔"; */
+  align-items: center;
+  color: #254896;
+  font-weight: 700;
+  position: absolute;
+  left: 4px;  /* moved icon closer */
+  top: 2px;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+  .card-img-top {
+      transition: transform 0.3s ease;
+      border-radius: 10px;
     }
+    
+ 
+  .img-fluid {
+    transition: transform 0.3s ease;
+}
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
     ul.list-icon li:hover {
       color: #254896;
     }
-    ul.list-icon li::before {
-      content: "✔";
-      color: #254896;
-      font-weight: 700;
-      position: absolute;
-      left: 0;
-      top: 2px;
-      font-size: 1.1rem;
-      line-height: 1;
-    }
-
+   
     /* Responsive adjustments */
     @media (max-width: 576px) {
       .cover h1 {
@@ -157,6 +180,9 @@
 </style>
 
 <div class="container-computer">
+  <!-- Breadcrumbs -->
+    
+    
     <!-- Cover Section -->
     <div class="cover">
         <h1>Civil Engineering</h1>
@@ -164,22 +190,56 @@
             The Civil Engineering Department focuses on developing infrastructure and imparting technical, ethical, and professional knowledge to students—preparing them for global engineering challenges with a solid foundation in design, construction, and maintenance.
         </p>
     </div>
-
+    <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('home')}}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('department') }}">Departments</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Civil Engineering</li>
+            </ol>
+        </nav>
     <!-- Tab Navigation -->
     <nav>
         <ul class="nav nav-tabs justify-content-center" id="deptTab" role="tablist">
-            <li class="nav-item"><a class="nav-link active" id="vision-tab" data-toggle="tab" href="#vision" role="tab">Vision</a></li>
+            <li class="nav-item"><a class="nav-link active" id="hod-tab" data-toggle="tab" href="#hod" role="tab">Message from HOD</a></li>
+            <li class="nav-item"><a class="nav-link " id="faculty-tab" data-toggle="tab" href="#faculty" role="tab">Faculty</a></li>
+            <li class="nav-item"><a class="nav-link " id="vision-tab" data-toggle="tab" href="#vision" role="tab">Vision</a></li>
             <li class="nav-item"><a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab">Mission</a></li>
             <li class="nav-item"><a class="nav-link" id="outcomes-tab" data-toggle="tab" href="#outcomes" role="tab">Course Outcomes</a></li>
             <li class="nav-item"><a class="nav-link" id="labs-tab" data-toggle="tab" href="#labs" role="tab">Laboratory Facilities</a></li>
-            <li class="nav-item"><a class="nav-link" id="faculty-tab" data-toggle="tab" href="#faculty" role="tab">Faculty</a></li>
+            <li class="nav-item"><a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab">Gallery</a></li>
+
         </ul>
     </nav>
 
     <!-- Tab Content -->
     <main class="tab-content" id="deptTabContent" style="max-width: 960px; margin: 1rem auto 3rem;">
+
+    <!-- Message from HOD -->
+      <section class="tab-pane fade show active" id="hod" role="tabpanel">
+        <h2>Message from HOD</h2>
+        <p>
+            The Department envisions facilitating the student community with high standards and value-oriented traditional teaching, coupled with modern techniques. Our goal is to nurture every student to become a true asset to the Nation and a noble human being on a global scale, equipped with technological versatility.
+        </p>
+        <p>
+            Our focus lies in fostering analytical and experimental skills among students, enabling them to apply their knowledge across various fields of Civil Engineering using both National and International codes.
+        </p>
+        <p>
+            Furthermore, we provide students with opportunities to enhance their communication and presentation skills, along with proficiency in software applications such as AutoCAD, etc. Through industrial training and visits to live construction sites, students gain practical knowledge and a deeper understanding of the field’s constraints.
+        </p>
+        <p>
+            It is our moral and social responsibility to impart state-of-the-art technological information to our Civil engineering students, considering the ever-evolving nature of construction methods, materials, and skills.
+        </p>
+        <p>
+            With a dedicated team of highly qualified and experienced faculty members, we strive to offer an enjoyable and effective learning experience to all our students, ensuring they are well prepared to meet the demands of the modern construction industry.
+        </p>
+        <p class="text-end fw-bold mt-4">
+            Mr. Parth Ramesh Joshi<br>
+            HOD, Civil Engineering
+        </p>
+    </section>
+
         <!-- Vision -->
-        <section class="tab-pane fade show active" id="vision" role="tabpanel">
+        <section class="tab-pane fade " id="vision" role="tabpanel">
             <h2>Vision</h2>
             <ul class="list-icon">
                 <li>To impart knowledge and excellence in Civil Engineering with a global perspective.</li>
@@ -230,13 +290,61 @@
         </section>
 
         <!-- Faculty -->
-        <section class="tab-pane fade" id="faculty" role="tabpanel">
-            <h2>Faculty Directory</h2>
-            <ul class="list-icon">
-                <li><strong>Mr. Parth Ramesh Joshi</strong> – HOD, ME (Civil)</li>
-                <li><strong>Mrs. Aishwarya Shivaji Khelbude</strong> – Lecturer, BE (Civil)</li>
-            </ul>
+        <section class="tab-pane fade text-center " id="faculty" role="tabpanel">
+          <h2>Faculty Directory</h2>
+
+          <!-- Faculty Table -->
+          <div class="table-responsive mt-4">
+              <table class="table table-bordered table-striped table-hover w-75 mx-auto">
+                  <thead class="table-primary">
+                      <tr>
+                          <th scope="col">Sr. No</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Designation</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Dr. Balaji S. Pasare</td>
+                          <td>HOD</td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td>Mrs. Preethi S. Deshmukh</td>
+                          <td>Assistant Professor</td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td>Mr. Rohit R. Panke</td>
+                          <td>Assistant Professor</td>
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td>Mr. Parth R. Joshi</td>
+                          <td>Assistant Professor</td>
+                      </tr>
+                      <tr>
+                          <td>5</td>
+                          <td>Mrs. Aishwarya S. Khelbude</td>
+                          <td>Assistant Professor</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </section>
+        <!-- Gallery -->
+        <section class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+            <h2>Department Gallery</h2>
+            <div class="row g-4 mt-4">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card shadow-sm border-0">
+                        <img src="https://via.placeholder.com/600x400?text=Image" class="card-img-top rounded" alt="Gallery Image">
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
 </div>
 

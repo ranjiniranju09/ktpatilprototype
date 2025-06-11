@@ -14,6 +14,13 @@
     a:hover {
       text-decoration: none;
     }
+    .breadcrumb{
+      display: flex;
+      list-style: none;
+      padding: 20px 15px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
 
     /* Header cover section */
     .cover {
@@ -92,13 +99,16 @@
     }
 
     section h2 {
-      font-weight: 700;
-      font-size: 2.2rem;
-      margin-bottom: 1.2rem;
-      color: #0a1930;
-      text-align: center;
-      position: relative;
-    }
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+  color: #0a1930;
+  text-align: center;
+  position: relative;
+  padding-top: 60px;
+  margin-top: -40px;
+}
+
     section h2::after {
       content: "";
       display: block;
@@ -137,6 +147,17 @@
       font-size: 1.1rem;
       line-height: 1;
     }
+    .card-img-top {
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+    }
+    
+    .img-fluid {
+        transition: transform 0.3s ease;
+    }
+    .img-fluid:hover {
+        transform: scale(1.05);
+    }
 
     /* Responsive adjustments */
     @media (max-width: 576px) {
@@ -158,47 +179,75 @@
 
 
 <div class="container-computer">
-    <!-- Breadcrumbs -->
-    <!-- <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Departments</a></li>
-            <li class="breadcrumb-item active" aria-current="page">B.Tech Computer Science</li>
-        </ol>
-    </nav> -->
-
+  
     <!-- Accordion Layout -->
     <div class="cover">
         <h1>Computer Science Department</h1>
         <p>To emerge as a world-class technology department through education, innovation, and collaborative research</p>
     </div>
 
+      <!-- Breadcrumbs -->
+    <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('home')}}">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{ route('department') }}">Departments</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Computer Science Engineering</li>
+        </ol>
+    </nav>
+
     <!-- Tab Navigation -->
     <nav>
         <ul class="nav nav-tabs justify-content-center" id="deptTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="true">Vision</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="faculty-tab" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="facilities-tab" data-toggle="tab" href="#facilities" role="tab" aria-controls="facilities" aria-selected="false">Facilities</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="po-tab" data-toggle="tab" href="#po" role="tab" aria-controls="po" aria-selected="false">Course Outcomes</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pso-tab" data-toggle="tab" href="#pso" role="tab" aria-controls="pso" aria-selected="false">Program Outcomes</a>
-        </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="hod-tab" data-toggle="tab" href="#hod" role="tab" aria-controls="hod" aria-selected="false">HOD Message</a>
+          </li>
+
+          <li class="nav-item" role="presentation">
+              <a class="nav-link " id="faculty-tab" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
+          </li>
+
+          <li class="nav-item" role="presentation">
+              <a class="nav-link " id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="true">Vision</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="facilities-tab" data-toggle="tab" href="#facilities" role="tab" aria-controls="facilities" aria-selected="false">Facilities</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="po-tab" data-toggle="tab" href="#po" role="tab" aria-controls="po" aria-selected="false">Course Outcomes</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pso-tab" data-toggle="tab" href="#pso" role="tab" aria-controls="pso" aria-selected="false">Program Outcomes</a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
+          </li>
+
         </ul>
     </nav>
 
     <main class="tab-content" id="deptTabContent" style="max-width: 960px; margin: 1rem auto 3rem;">
-        <section class="tab-pane fade show active" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+
+        <section class="tab-pane fade text-center show active" id="hod" role="tabpanel" aria-labelledby="hod-tab">
+            <h2>Message from HOD</h2>
+            <p>
+                The Computer Science and Engineering Department is committed to providing quality education
+                and research opportunities in the field of computer science. Our mission is to equip students with
+                the skills and knowledge necessary to excel in the rapidly evolving technology landscape.
+            </p>
+            <p>
+                We strive to foster a culture of innovation, collaboration, and ethical practices among our students
+                and faculty. Through our comprehensive curriculum, state-of-the-art facilities, and industry partnerships,
+                we aim to produce graduates who are well-prepared to meet the challenges of the future.
+            </p>
+            <p class="text-end fw-bold mt-4">
+            Prof. Gaikwad Shweta Kundlik <br>
+            HOD ME(Computer Science and Engineering) 
+        </p>
+        </section>
+        <section class="tab-pane fade " id="vision" role="tabpanel" aria-labelledby="vision-tab">
         <h2>Vision</h2>
         <p>
             To build a strong learning environment in the field of Computer Science &amp;
@@ -223,18 +272,45 @@
         </ul>
         </section>
 
-        <section class="tab-pane fade text-center" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
-        <h2>Faculty Directory</h2>
-        <img
-            src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=200"
-            alt="Prof. Gaikwad Shweta Kundlik"
-            class="rounded-circle mb-3"
-            style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #254896;"
-        />
-        <h5>Prof. Gaikwad Shweta Kundlik</h5>
-        <p class="font-italic mb-1">HOD ME (CSE)</p>
-        <p>K.T. Patil College Of Engineering &amp; Technology, Dharashiv</p>
-        </section>
+        <section class="tab-pane fade " id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
+          <h2>Faculty Directory</h2>
+
+          <!-- Faculty Table -->
+          <div class="table-responsive mt-5">
+              <table class="table table-bordered table-striped table-hover w-75 mx-auto">
+                  <thead class="table-primary">
+                      <tr>
+                          <th scope="col">Sr. No</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Designation</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Mrs. Swetha Gaikwad</td>
+                          <td>HOD</td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td>Mr. Kazi S.N</td>
+                          <td>Assistant Professor</td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td>Mr. Dumane S.S</td>
+                          <td>Assistant Professor</td>
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td>Mr. Anwary A.R</td>
+                          <td>Assistant Professor</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </section>
+
 
         <section class="tab-pane fade" id="facilities" role="tabpanel" aria-labelledby="facilities-tab">
         <h2>Facilities</h2>
@@ -283,13 +359,36 @@
             </li>
         </ul>
         </section>
+        <!-- <section class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+          <h2>Department Gallery</h2>
+          <div class="row">
+              <div class="col-md-4 mb-4">
+                  <img src="https://via.placeholder.com/300x200" class="img-fluid rounded shadow-sm" alt="Gallery Image 1">
+              </div>
+              <div class="col-md-4 mb-4">
+                  <img src="https://via.placeholder.com/300x200" class="img-fluid rounded shadow-sm" alt="Gallery Image 2">
+              </div>
+              <div class="col-md-4 mb-4">
+                  <img src="https://via.placeholder.com/300x200" class="img-fluid rounded shadow-sm" alt="Gallery Image 3">
+              </div>
+              
+          </div>
+      </section> -->
+      <section class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+        <h2>Department Gallery</h2>
+        <div class="row g-4 mt-4">
+            <div class="col-sm-6 col-md-4">
+                <div class="card shadow-sm border-0">
+                    <img src="https://via.placeholder.com/600x400?text=Image" class="card-img-top rounded" alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     </main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 @endsection

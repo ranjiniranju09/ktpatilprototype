@@ -5,17 +5,15 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     } */
    
-    .navbar {
-    position: sticky;
-    top: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    z-index: 9999;
-    background: rgba(0, 0, 0, 0.53); /*semi-transparent for blending*/
-    backdrop-filter: blur(6px); /* optional: blur for glass effect */
-}
-
-
+     .navbar {
+        position: fixed;
+        /* top: 0; */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        z-index: 10000;
+        background: rgba(0, 0, 0, 0.53);
+        backdrop-filter: blur(6px);
+    }
 
     .navbar a,
     .navbar {
@@ -25,7 +23,6 @@
     .dropdown-menu a {
         color: black !important;
     }
-
 
     .navbar-brand {
         display: flex;
@@ -40,9 +37,7 @@
 
     .navbar-brand span {
         font-weight: bold;
-        /* white-space: nowrap; */
         font-size: 1.1rem;
-        /* color: black; */
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
@@ -67,7 +62,6 @@
 
     .navbar-nav .nav-link:hover,
     .navbar-nav .dropdown-item:hover {
-        /* background-color: transparent !important; */
         background-color: white;
         color: black !important;
         border-radius: 25px !important;
@@ -94,7 +88,6 @@
         visibility: hidden;
         transition: opacity 0.3s ease, visibility 0.3s ease;
     }
-    
 
     .dropdown:hover .dropdown-menu {
         opacity: 1;
@@ -127,8 +120,7 @@
     }
 
     .navbar .btn {
-        /* background-color: white; */
-        color:rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
         font-weight: bold;
         border-radius: 30px;
         transition: background-color 0.3s ease, color 0.3s ease;
@@ -138,11 +130,9 @@
         background-color: #c43047;
         color: white;
     }
-    
-
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('home') }}">
             <img src="{{ asset('images/College-Logo.png') }}" alt="Logo">
@@ -162,10 +152,11 @@
                     <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                         <li><a class="dropdown-item" href="#">Overview</a></li>
                         <li><a class="dropdown-item" href="{{ route('about') }}">Vision & Mission</a></li>
-                        <li><a class="dropdown-item" href="{{ route('leadership')}}">Meet Our Leadership </a></li>
-                        <li><a class="dropdown-item" href="{{ route('Governing_members')}}">Governing Members</a></li>
+                        <li><a class="dropdown-item" href="{{ route('leadership') }}">Meet Our Leadership</a></li>
+                        <li><a class="dropdown-item" href="{{ route('Governing_members') }}">Governing Members</a></li>
                     </ul>
                 </li>
+
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="academicDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -181,12 +172,12 @@
                             </ul>
                         </li>
                         <li class="dropdown-submenu">
-                            <a class="dropdown-item dropdown-toggle" href="#">Departments</a>
+                            <a class="dropdown-item dropdown-toggle" href="{{ route('department')}}">Departments</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{ route('computer')}}">Computer</a></li>
                                 <li><a class="dropdown-item" href="{{ route('eee')}}">Electrical & Electronics</a></li>
-                                <li><a class="dropdown-item" href="#">Mechanical</a></li>
-                                <li><a class="dropdown-item" href="{{ route('electronics') }}">Electronics & Telecommunication</a></li>
+                                <li><a class="dropdown-item" href="{{ route('mechanical')}}">Mechanical</a></li>
+                                <li><a class="dropdown-item" href="{{ route('electronics')}}">Electronics & Telecommunication</a></li>
                                 <li><a class="dropdown-item" href="{{route('civil')}}">Civil Engineering</a></li>
                             </ul>
                         </li>
@@ -230,6 +221,16 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('gallary') }}">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Others
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                        <li><a class="dropdown-item" href="{{ route('certificate')}}">Accreditation</a></li>
+                        <li><a class="dropdown-item" href="#">Seminars</a></li>
+                        <li><a class="dropdown-item" href="#">Fests</a></li>
+                    </ul>
                 </li>
 
                 <li class="nav-item">

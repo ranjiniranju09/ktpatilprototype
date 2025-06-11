@@ -56,3 +56,12 @@ reference websites :
 reference links :
     https://teamforstu-my.sharepoint.com/:w:/g/personal/zindu_teamforstu_onmicrosoft_com/EdMIah6DVbJIiOvwYPhEhxUBsHOvXwman8uR6HAI-hFHFw?e=QZkAzC
     https://docs.google.com/spreadsheets/d/1_76pfLiwcWQvoVX5qY9ARrNzJoPIAcFrsThLfaJM0Ss/edit?gid=0#gid=0
+
+
+    overlayring issue 
+    html structure 
+    navbar content footer
+
+    issue - bootstrap or custom 
+  in css : --force 
+  

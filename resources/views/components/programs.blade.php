@@ -113,12 +113,16 @@
       object-fit: cover;
       transition: transform 0.3s ease-in-out;
       display: block;
+            /* z-index: 0; */
+
       
     }
 
-    .cardprograms a:hover img {
+    /* .cardprograms a:hover img {
       transform: scale(1.1);
-    }
+            /* z-index: 0; */
+
+    /* } */ */
   </style>
 
   <div class="containerprograms">

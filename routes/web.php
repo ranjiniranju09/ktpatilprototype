@@ -38,6 +38,14 @@ Route::get('/Diploma', function () {
     return view('programs.diploma');
 })->name('diploma');
 
+Route::get('/Departments', function () {
+    return view('programs.allcourses');
+})->name('departments');
+
+Route::get('/Department', function () {
+    return view('departments.departments');
+})->name('department');
+
 Route::get('/Computer_Science', function () {
     return view('departments.computer');
 })->name('computer');
@@ -53,6 +61,10 @@ Route::get('/Electronics_and_Telecommunication_Engineering ', function () {
 Route::get('/Civil_Engineering', function () {
     return view('departments.civil');
 })->name('civil');
+
+Route::get('/Mechanical_Engineering', function () {
+    return view('departments.mechanical');
+})->name('mechanical');
 
 Route::get('/courses', function () {
     return view('programs.allcourses');
@@ -81,3 +93,14 @@ Route::get('/Admission', function () {
 Route::get('/Placements', function () {
     return view('others.placement_alumni');
 })->name('placements');
+
+Route::get('/certificate', function () {
+    return view('others.certificates');
+})->name('certificate');
+
+Route::get('/Contact', function () {
+    return view('others.contact');
+})->name('contact');
+
+
+Route::post('/contact', [App\Http\Controllers\Controller::class, 'submit'])->name('contact.submit');

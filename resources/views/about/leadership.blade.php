@@ -13,7 +13,7 @@
         text-align: center;
         font-size: 36px;
         font-weight: 800;
-        color:rgb(169, 27, 27);
+        color: rgb(169, 27, 27);
         margin-bottom: 60px;
     }
 
@@ -44,7 +44,7 @@
     .leader-name {
         font-size: 24px;
         font-weight: 700;
-        color:rgb(169, 26, 26);
+        color: rgb(169, 26, 26);
     }
 
     .leader-title {
@@ -107,6 +107,24 @@
                 <p>At K.T.Patil College of Engineering, we emphasize the importance of innovation, teamwork, and ethical responsibility in engineering. Our dedicated faculty and staff are committed to supporting your educational journey, ensuring you have access to the resources and opportunities needed to succeed.</p>
                 <p>I encourage all students to actively participate in campus activities, collaborate with peers, and seek guidance whenever needed. Together, we can create a vibrant community that fosters growth, creativity, and excellence.</p>
                 <p>I look forward to witnessing your achievements and contributions in the days to come.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Principal -->
+    <div class="leader-card">
+        <img src="{{ asset('images/principal.jpg') }}" alt="Principal Photo" class="leader-img">
+        <div class="leader-content">
+            <div class="leader-name">Prof. Dr. Balaji Shivaji Pasare</div>
+            <div class="leader-title">Principal</div>
+            <div class="leader-message">
+                <p>Dear Students,</p>
+                <p>I Welcome you in K.T. Patil college of engineering & Technology, A center of excellence learning in Dharashiv. I have great pleasure in knowing your interest in joining our institute.</p>
+                <p>You are entering into the Area of Engineering & Technology with full opportunities throughout the world. New Technologies & New skills are emerging continuously. Horizons of engineering professional activities are getting much expanded.</p>
+                <p>The Institute offers Undergraduate (Degree), Diploma (Polytechnic) and in Five engineering disciplines. The disciplines are Civil Engineering, Electrical & Electronics Engineering, Mechanical Engineering, Electrical & Electronics Engineering, Computer Science Engineering. And Postgraduate Engineering programme in Civil Engineering.</p>
+                <p>The aim of this institute is to produce outstanding Engineers who will prove their professional competence in their respective discipline. At the same time the Institute lays special Emphasis on Human Values Ethics, apart from Academic Excellence.</p>
+                <p>All the disciplines are equipped with the Laboratories. The library has Enriched with all types of text/reference books in all the discipline.</p>
+                <p>To conclude, I would like to reiterate that, we from K.T. Patil College of Engineering & Technology, are committed to produce knowledgeable, professional experts but active contributors to the society, cultured individual with high personal, professional and ethical standards.</p>
             </div>
         </div>
     </div>

@@ -62,6 +62,7 @@
     color: var(--primary-color);
 }
 
+
 .contact-info li {
     display: flex;
     align-items: flex-start;
@@ -118,9 +119,10 @@
     <div class="footer-top">
         <div class="container-footer">
             <div class="footer-grid">
+                <!-- Left Column: About -->
                 <div class="footer-section">
-                    <h3>About DY Patil University</h3>
-                    <p>DY Patil University is committed to excellence in teaching, research, and innovation. We strive to create an environment that fosters intellectual growth and personal development.</p>
+                    <h3>About KT Patil College Of Engineering</h3>
+                    <p>Brief about college</p>
                     <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -129,6 +131,7 @@
                     </div>
                 </div>
 
+                <!-- Center Column: Quick Links -->
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
@@ -140,12 +143,13 @@
                     </ul>
                 </div>
 
-                <div class="footer-section">
+                <!-- Right Column: Contact Information -->
+                <div class="footer-section contact-section">
                     <h3>Contact Information</h3>
                     <ul class="contact-info">
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            K.T.Patil College of Engineering and Technology, Keshav Nagar, Jadhavwadi road ,Dharashiv Pune 413501
+                            K.T.Patil College of Engineering and Technology, Keshav Nagar, Jadhavwadi road, Dharashiv Pune 413501
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
@@ -153,7 +157,7 @@
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <a href="mailto:info@dypatil.edu">#</a>
+                            <a href="mailto:ktpcoeo@gmail.com">ktpcoeo@gmail.com</a>
                         </li>
                     </ul>
                 </div>
