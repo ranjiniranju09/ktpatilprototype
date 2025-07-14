@@ -117,7 +117,14 @@
             <span>We’re here to help you with your queries</span>
         </div>
 
-        <form method="POST" action="#">
+        
+        @if(session('success'))
+            <div style="color: green; margin-bottom: 20px;">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        <form method="POST" action="{{route('contact.show')}}" target="_blank">
             @csrf
 
             <div class="form-group">

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use App\Http\Controllers\ContactController;
 
 use App\Http\Controller;
 
@@ -98,9 +100,28 @@ Route::get('/certificate', function () {
     return view('others.certificates');
 })->name('certificate');
 
-Route::get('/Contact', function () {
+Route::get('/Contacts', function () {
     return view('others.contact');
-})->name('contact');
+})->name('contacts');
+
+Route::get('/test', function () {
+    return view('others.test');
+})->name('test');
+
+// Route::post('/contact', [App\Http\Controllers\Controller::class, 'submit'])->name('contact.submit');
+
+Route::post('/contactshow', [ContactController::class, 'submit'])->name('contact.show');
 
 
-Route::post('/contact', [App\Http\Controllers\Controller::class, 'submit'])->name('contact.submit');
+Route::post('/showcontact', function (Request $request) {
+    $validated = $request->validate([
+        'name'     => 'required|string|max:100',
+        'email'    => 'required|email|max:150',
+        'phone'    => 'required|digits:10',
+        'city'     => 'required|string',
+        'program'  => 'required|string',
+        'state'    => 'required|string',
+    ]);
+
+    return view('others.showcontact', compact('validated'));
+})->name('contact.show');
