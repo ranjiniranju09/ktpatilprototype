@@ -200,14 +200,14 @@
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('comittee') }}">Committees</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ route('placements') }}">Placements & Alumni</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ route('certificate') }}">Accreditation</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('gallary') }}">Gallery</a></li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="othersDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">Others</a>
                     <ul class="dropdown-menu" aria-labelledby="othersDropdown">
-                        <li><a class="dropdown-item" href="{{ route('certificate') }}">Accreditation</a></li>
+                        <li><a class="dropdown-item" href="{{ route('placements') }}">Placements & Alumni</a></li>
                         <li><a class="dropdown-item" href="#">Seminars</a></li>
                         <li><a class="dropdown-item" href="#">Fests</a></li>
                     </ul>
