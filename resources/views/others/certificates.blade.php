@@ -102,7 +102,7 @@
 
             <div class="tab-pane fade" id="tab-fees" role="tabpanel">
                 <h5 class="mb-3">Fees Regulating Authority Certificate</h5>
-                <iframe class="pdf-frame" src="{{ asset('images/FRA_WEBSITE_DISPLAY.pdf') }}"></iframe>
+                <iframe class="pdf-frame" src="{{ asset('images/FRA_WEBSITE1.pdf') }}"></iframe>
             </div>
 
             <div class="tab-pane fade" id="tab-dte" role="tabpanel">
