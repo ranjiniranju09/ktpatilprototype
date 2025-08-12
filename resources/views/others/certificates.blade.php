@@ -107,12 +107,12 @@
 
             <div class="tab-pane fade" id="tab-dte" role="tabpanel">
                 <h5 class="mb-3">Directorate of Technical Education Certificate</h5>
-                <iframe class="pdf-frame" src="{{ asset('images/DTE_Certificate.pdf') }}"></iframe>
+                <iframe class="pdf-frame" src="{{ asset('files/images/DTE_PERMISSION_NEW_COURSES.pdf') }}"></iframe>
             </div>
 
             <div class="tab-pane fade" id="tab-maha-gov" role="tabpanel">
                 <h5 class="mb-3">Maharashtra Government Approval Certificate</h5>
-                <iframe class="pdf-frame" src="{{ asset('images/Maharashtra_Government.pdf') }}"></iframe>
+                <iframe class="pdf-frame" src="{{ asset('files/images/11zon_merged-PDF GR.pdf') }}"></iframe>
             </div>
 
             <div class="tab-pane fade" id="tab-bamu" role="tabpanel">

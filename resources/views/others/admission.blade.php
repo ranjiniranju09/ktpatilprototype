@@ -99,11 +99,40 @@
     .table td {
         vertical-align: middle;
     }
+      .marquee-container {
+        background: #b71c1c;
+        color: white;
+        padding: 8px 0;
+        overflow: hidden;
+        font-weight: bold;
+    }
+    .marquee-text {
+        display: inline-block;
+        white-space: nowrap;
+        animation: scroll-left 20s linear infinite;
+    }
+    @keyframes scroll-left {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    .marquee-text a {
+        color: yellow;
+        text-decoration: none; /* Removes underline */
+        margin: 0 20px;
+    }
 </style>
+
+
 
 <div class="governing-body">
     <h1 class="section-title">🎓 Admission Details</h1>
-
+<div class="marquee-container">
+    <div class="marquee-text"> 
+        <a href="{{ asset('images/files/Merit_list_of_NonCap_for_Diploma_First_Year.pdf') }}" target="_blank">🏆📄Merit NoNCAP Diploma 1st Year</a> |
+        <a href="{{ asset('images/files/Merit_list_of_NonCap_for_Diploma_Second_Year.pdf') }}" target="_blank">🏆📄Merit NoNCAP Diploma 2st Year</a> |
+        {{--<a href="{{ asset('files/merit_cap_round3.pdf') }}" target="_blank">Merit CAP Round 3</a>--}}
+    </div>
+</div>
     <div class="tab-container">
         <!-- Left: Tabs -->
         <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
