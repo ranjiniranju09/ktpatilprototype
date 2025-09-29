@@ -138,7 +138,7 @@
 <!-- Navbar Blade -->
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="{{ route('home') }}">
+        <a class="navbar-brand" href="{{ route('/') }}">
             <img src="{{ asset('images/College-Logo.png') }}" alt="Logo">
             <span>K.T.Patil College of Engineering and Technology</span>
         </a>
@@ -194,7 +194,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">Events & Notices</a>
                     <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
-                        <li><a class="dropdown-item" href="{{ route('notice') }}">Notices</a></li>
+                        {{--<li><a class="dropdown-item" href="{{ route('notice') }}">Notices</a></li>--}}
                         <li><a class="dropdown-item" href="#">Seminars</a></li>
                         <li><a class="dropdown-item" href="#">Fests</a></li>
                     </ul>

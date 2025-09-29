@@ -204,7 +204,7 @@
     <div class="container">
         <nav class="navigation" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="{{ url('/home') }}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">All Courses</li>
             </ol>
         </nav>
@@ -217,14 +217,14 @@
                 <h3>Computer Science Engineering</h3>
                 <p>Build a strong foundation in engineering concepts and practices with hands-on experience.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                    {{--<a href="{{ route('computer')}}" class="apply-link">Apply</a>--}}
                 </div>
             </div>
             <div class="course-card">
                 <h3>Electrical and Electronics Engineering</h3>
                 <p>Build a strong foundation in engineering concepts and practices with hands-on experience.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                    {{--<a href="{{ route('eee')}}" class="apply-link">Apply</a>--}}
                 </div>           
             </div>
         
@@ -232,7 +232,7 @@
                 <h3>Electronics and Telecommunication Engineering</h3>
                 <p>Learn modern business strategies and leadership skills for a successful career in management.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                    {{--<a href="{{ route('electronics')}}" class="apply-link">Apply</a>--}}
                 </div>            
             </div>
         
@@ -240,7 +240,7 @@
                 <h3>Civil Engineering</h3>
                 <p>Explore creativity, innovation, and design thinking with our comprehensive design program.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                    {{--<a href="{{ route('civil')}}" class="apply-link">Apply</a>--}}
                 </div>
             </div>
 
@@ -248,7 +248,7 @@
                 <h3>Mechanical Engineering</h3>
                 <p>Explore creativity, innovation, and design thinking with our comprehensive design program.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                    {{--<a href="{{ route ('mechanical')}}" class="apply-link">Apply</a>--}}
                 </div>
             </div>
         </div>
@@ -260,14 +260,14 @@
                 <h3>Computer Science Engineering</h3>
                 <p>Build a strong foundation in engineering concepts and practices with hands-on experience.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                    {{--<a href="#" class="apply-link">Apply</a>--}}
                 </div>
             </div>
             <div class="course-card">
                 <h3>Electrical and Electronics Engineering</h3>
                 <p>Build a strong foundation in engineering concepts and practices with hands-on experience.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                    {{--<a href="#" class="apply-link">Apply</a>--}}
                 </div>
             </div>
         
@@ -275,7 +275,7 @@
                 <h3>Electronics and Telecommunication Engineering</h3>
                 <p>Learn modern business strategies and leadership skills for a successful career in management.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                    {{--<a href="#" class="apply-link">Apply</a>--}}
                 </div>
             </div>
         
@@ -283,7 +283,7 @@
                 <h3>Civil Engineering</h3>
                 <p>Explore creativity, innovation, and design thinking with our comprehensive design program.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                   {{-- <a href="#" class="apply-link">Apply</a>--}}
                 </div>
             </div>
 
@@ -291,7 +291,7 @@
                 <h3>Mechanical Engineering</h3>
                 <p>Explore creativity, innovation, and design thinking with our comprehensive design program.</p>
                 <div class="card-footer">
-                    <a href="#" class="apply-link">Apply</a>
+                   {{-- <a href="#" class="apply-link">Apply</a>  --}}
                 </div>
             </div>
         </div>
@@ -301,7 +301,7 @@
             <div class="course-card">
                 <h3>Civil Engineering (M.E. WRE - Water Resource Engineering)</h3>
                 <p>Build a strong foundation in engineering concepts and practices with hands-on experience.</p>
-                <a href="#" class="apply-link">Apply</a>
+                {{--<a href="#" class="apply-link">Apply</a>--}}
             </div>
         </div>
     </div>
