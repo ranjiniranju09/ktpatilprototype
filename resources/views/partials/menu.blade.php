@@ -191,15 +191,15 @@
 
                 <!-- Others -->
                 <li class="nav-item"><a class="nav-link" href="{{ route('admission') }}">Admission</a></li>
-                <li class="nav-item dropdown">
+                {{--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">Events & Notices</a>
                     <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
-                        {{--<li><a class="dropdown-item" href="{{ route('notice') }}">Notices</a></li>--}}
+                        <li><a class="dropdown-item" href="{{ route('notice') }}">Notices</a></li>
                         <li><a class="dropdown-item" href="#">Seminars</a></li>
                         <li><a class="dropdown-item" href="#">Fests</a></li>
                     </ul>
-                </li>
+                </li>--}}
                 <li class="nav-item"><a class="nav-link" href="{{ route('comittee') }}">Committees</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('certificate') }}">Accreditation</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('gallary') }}">Gallery</a></li>
