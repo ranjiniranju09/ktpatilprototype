@@ -56,7 +56,7 @@ Route::get('/Electrical_Electronics_Engineering', function () {
     return view('departments.electricalandelectronics');
 })->name('eee');
 
-Route::get('/Electronics_and_Telecommunication_Engineering ', function () {
+Route::get('/Electronics_and_Telecommunication_Engineering', function () {
     return view('departments.ece');
 })->name('electronics');
 
@@ -112,16 +112,5 @@ Route::get('/test', function () {
 
 Route::post('/contactshow', [ContactController::class, 'submit'])->name('contact.show');
 
+Route::post('/contact-submit', [ContactController::class, 'submit'])->name('contact.submit');
 
-Route::post('/showcontact', function (Request $request) {
-    $validated = $request->validate([
-        'name'     => 'required|string|max:100',
-        'email'    => 'required|email|max:150',
-        'phone'    => 'required|digits:10',
-        'city'     => 'required|string',
-        'program'  => 'required|string',
-        'state'    => 'required|string',
-    ]);
-
-    return view('others.showcontact', compact('validated'));
-})->name('contact.show');

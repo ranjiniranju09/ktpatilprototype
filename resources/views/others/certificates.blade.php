@@ -102,27 +102,27 @@
 
             <div class="tab-pane fade" id="tab-fees" role="tabpanel">
                 <h5 class="mb-3">Fees Regulating Authority Certificate</h5>
-                <iframe class="pdf-frame" src="{{ asset('images/FRA_WEBSITE1.pdf') }}"></iframe>
+                <iframe class="pdf-frame" src="{{ asset('images/files/FRA_WEBSITE1.pdf') }}"></iframe>
             </div>
 
             <div class="tab-pane fade" id="tab-dte" role="tabpanel">
                 <h5 class="mb-3">Directorate of Technical Education Certificate</h5>
-                <iframe class="pdf-frame" src="{{ asset('files/images/DTE_PERMISSION_NEW_COURSES.pdf') }}"></iframe>
+                <iframe class="pdf-frame" src="{{ asset('images/files/DTE_PERMISSION_NEW_COURSES.pdf') }}"></iframe>
             </div>
 
             <div class="tab-pane fade" id="tab-maha-gov" role="tabpanel">
                 <h5 class="mb-3">Maharashtra Government Approval Certificate</h5>
-                <iframe class="pdf-frame" src="{{ asset('files/images/11zon_merged-PDF GR.pdf') }}"></iframe>
+                <iframe class="pdf-frame" src="{{ asset('images/files/MH_govt_approval_certi.pdf') }}"></iframe>
             </div>
 
-            <div class="tab-pane fade" id="tab-bamu" role="tabpanel">
+            {{--<div class="tab-pane fade" id="tab-bamu" role="tabpanel">
                 <h5 class="mb-3">Dr. Babasaheb Ambedkar Marathwada University Certificate</h5>
                 <iframe class="pdf-frame" src="{{ asset('images/BAMU_Certificate.pdf') }}"></iframe>
-            </div>
+            </div> --}}
 
             <div class="tab-pane fade" id="tab-msbte" role="tabpanel">
                 <h5 class="mb-3">Maharashtra State Board of Technical Education Certificate</h5>
-                <iframe class="pdf-frame" src="{{ asset('images/MSBTE_Certificate.pdf') }}"></iframe>
+                <iframe class="pdf-frame" src="{{ asset('images/files/MSBTE AFFILIATION CERTIFICATE 25 26 (2).pdf') }}"></iframe>
             </div>
         </div>
     </div>

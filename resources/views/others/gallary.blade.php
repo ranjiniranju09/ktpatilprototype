@@ -105,6 +105,24 @@
                 <p class="gallery-caption">College Building</p>
             </div>
         </div>
+        <div class="gallery-item college show">
+            <div class="gallery-box">
+                <img src="{{ asset('images/gallery/students_1.jpeg') }}" alt="students_1">
+                <p class="gallery-caption">Students</p>
+            </div>
+        </div>
+        <div class="gallery-item college show">
+            <div class="gallery-box">
+                <img src="{{ asset('images/gallery/students.jpeg') }}" alt="students_3">
+                <p class="gallery-caption">Students</p>
+            </div>
+        </div>
+        <div class="gallery-item college show">
+            <div class="gallery-box">
+                <img src="{{ asset('images/gallery/library.jpeg') }}" alt="library">
+                <p class="gallery-caption">Library</p>
+            </div>
+        </div>
 
         <!-- Events -->
         <div class="gallery-item events show">
@@ -137,6 +155,12 @@
                 <p class="gallery-caption">Teaching & Non-teaching Staff</p>
             </div>
         </div>
+        <div class="gallery-item events show">
+            <div class="gallery-box">
+                <img src="{{ asset('images/gallery/yoga.jpeg') }}" alt="yoga">
+                <p class="gallery-caption">Yoga Day</p>
+            </div>
+        </div>
 
         <!-- Labs -->
         <div class="gallery-item labs show">
@@ -167,6 +191,12 @@
             <div class="gallery-box">
                 <img src="{{ asset('images/gallery/welding_machine_lab.jpg') }}" alt="Welding Lab">
                 <p class="gallery-caption">Welding Machine Lab</p>
+            </div>
+        </div>
+        <div class="gallery-item labs show">
+            <div class="gallery-box">
+                <img src="{{ asset('images/gallery/lab_1.jpeg') }}" alt="Lab">
+                <p class="gallery-caption">Lab</p>
             </div>
         </div>
     </div>

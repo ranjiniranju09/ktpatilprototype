@@ -199,36 +199,35 @@
     <nav>
         <ul class="nav nav-tabs justify-content-center" id="deptTab" role="tablist">
           <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="hod-tab" data-toggle="tab" href="#hod" role="tab" aria-controls="hod" aria-selected="false">HOD Message</a>
+              <a class="nav-link active" id="hod-tab" data-bs-toggle="tab" href="#hod" role="tab" aria-controls="hod" aria-selected="true">HOD Message</a>
           </li>
 
           <li class="nav-item" role="presentation">
-              <a class="nav-link " id="faculty-tab" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
+              <a class="nav-link" id="faculty-tab" data-bs-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
           </li>
 
           <li class="nav-item" role="presentation">
-              <a class="nav-link " id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="true">Vision</a>
+              <a class="nav-link" id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Vision</a>
           </li>
           <li class="nav-item" role="presentation">
-              <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
+              <a class="nav-link" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
           </li>
           <li class="nav-item" role="presentation">
-              <a class="nav-link" id="facilities-tab" data-toggle="tab" href="#facilities" role="tab" aria-controls="facilities" aria-selected="false">Facilities</a>
+              <a class="nav-link" id="facilities-tab" data-bs-toggle="tab" href="#facilities" role="tab" aria-controls="facilities" aria-selected="false">Facilities</a>
           </li>
           <li class="nav-item" role="presentation">
-              <a class="nav-link" id="po-tab" data-toggle="tab" href="#po" role="tab" aria-controls="po" aria-selected="false">Course Outcomes</a>
+              <a class="nav-link" id="po-tab" data-bs-toggle="tab" href="#po" role="tab" aria-controls="po" aria-selected="false">Course Outcomes</a>
           </li>
           <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pso-tab" data-toggle="tab" href="#pso" role="tab" aria-controls="pso" aria-selected="false">Program Outcomes</a>
+              <a class="nav-link" id="pso-tab" data-bs-toggle="tab" href="#pso" role="tab" aria-controls="pso" aria-selected="false">Program Outcomes</a>
           </li>
           <li class="nav-item" role="presentation">
-              <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
+              <a class="nav-link" id="gallery-tab" data-bs-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
           </li>
-
         </ul>
     </nav>
 
-    <main class="tab-content" id="deptTabContent" style="max-width: 960px; margin: 1rem auto 3rem;">
+     <main class="tab-content" id="deptTabContent" style="max-width: 960px; margin: 1rem auto 3rem;">
 
         <section class="tab-pane fade text-center show active" id="hod" role="tabpanel" aria-labelledby="hod-tab">
             <h2>Message from HOD</h2>

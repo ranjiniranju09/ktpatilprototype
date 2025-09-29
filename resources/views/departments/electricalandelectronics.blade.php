@@ -214,22 +214,22 @@
             <a class="nav-link active" id="hod-tab" data-toggle="tab" href="#hod" role="tab" aria-controls="hod" aria-selected="true">HOD Message</a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="faculty-tab" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
+            <a class="nav-link" id="faculty-tab" data-bs-toggle="tab" href="#faculty" role="tab" aria-controls="faculty" aria-selected="false">Faculty</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="vision-tab" data-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="true">Vision</a>
+            <a class="nav-link" id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab" aria-controls="vision" aria-selected="true">Vision</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
+            <a class="nav-link" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Mission</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="peo-tab" data-toggle="tab" href="#peo" role="tab" aria-controls="peo" aria-selected="false">Course Outcomes</a>
+            <a class="nav-link" id="peo-tab" data-bs-toggle="tab" href="#peo" role="tab" aria-controls="peo" aria-selected="false">Course Outcomes</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="labs-tab" data-toggle="tab" href="#labs" role="tab" aria-controls="labs" aria-selected="false">Laboratory Facilities</a>
+            <a class="nav-link" id="labs-tab" data-bs-toggle="tab" href="#labs" role="tab" aria-controls="labs" aria-selected="false">Laboratory Facilities</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
+            <a class="nav-link" id="gallery-tab" data-bs-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">Gallery</a>
         </li>
 
         </ul>

@@ -213,7 +213,7 @@
             <h3>Computer Science Engineering</h3>
             <p>Focused on computing technologies, software development, and AI innovations.</p>
             <div class="card-footer">
-                <a href="{{ url('/Computer_Science') }}" class="apply-link" role="button" aria-label="View details for Computer Science Engineering">View Details</a>
+                <a href="{{ route('computer') }}" class="apply-link" role="button" aria-label="View details for Computer Science Engineering">View Details</a>
             </div>
         </div>
 
@@ -222,7 +222,7 @@
             <h3>Electrical and Electronics Engineering</h3>
             <p>Explores power systems, electronics, and modern automation techniques.</p>
             <div class="card-footer">
-                <a href="{{ url('/Electrical_Electronics_Engineering') }}" class="apply-link" role="button" aria-label="View details for Electrical and Electronics Engineering">View Details</a>
+                <a href="{{ route('eee') }}" class="apply-link" role="button" aria-label="View details for Electrical and Electronics Engineering">View Details</a>
             </div>
         </div>
 
@@ -231,7 +231,7 @@
             <h3>Civil Engineering</h3>
             <p>Deals with infrastructure, construction, and environmental engineering.</p>
             <div class="card-footer">
-                <a href="{{ url('/Civil_Engineering') }}" class="apply-link" role="button" aria-label="View details for Civil Engineering">View Details</a>
+                <a href="{{ route('civil') }}" class="apply-link" role="button" aria-label="View details for Civil Engineering">View Details</a>
             </div>
         </div>
 
@@ -240,27 +240,27 @@
             <h3>Mechanical Engineering</h3>
             <p>Focuses on machinery, manufacturing, and thermodynamics.</p>
             <div class="card-footer">
-                <a href="{{ url('/departments/mech') }}" class="apply-link" role="button" aria-label="View details for Mechanical Engineering">View Details</a>
+                <a href="{{ route('mechanical') }}" class="apply-link" role="button" aria-label="View details for Mechanical Engineering">View Details</a>
             </div>
         </div>
 
         <div class="course-card">
             <div class="department-icon" aria-hidden="true">📡</div>
-            <h3>Electronics and Communication Engineering</h3>
+            <h3>Electronics and TeleCommunication Engineering</h3>
             <p>Covers communication systems, VLSI design, and embedded systems.</p>
             <div class="card-footer">
-                <a href="{{ url('/departments/ece') }}" class="apply-link" role="button" aria-label="View details for Electronics and Communication Engineering">View Details</a>
+                <a href="{{ route('electronics') }}" class="apply-link" role="button" aria-label="View details for Electronics and Communication Engineering">View Details</a>
             </div>
         </div>
 
-        <div class="course-card">
+        {{--<div class="course-card">
             <div class="department-icon" aria-hidden="true">🔬</div>
             <h3>Applied Science</h3>
             <p>Bridge theoretical science with practical applications in physics, chemistry, mathematics, and technology.</p>
             <div class="card-footer">
                 <a href="{{ url('/departments/it') }}" class="apply-link" role="button" aria-label="View details for Applied Science">View Details</a>
             </div>
-        </div>
+        </div>--}}
     </div>
 </div>
 

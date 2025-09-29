@@ -200,13 +200,13 @@ ul.list-icon li::before {
     <!-- Tab Navigation -->
     <nav>
         <ul class="nav nav-tabs justify-content-center" id="deptTab" role="tablist">
-            <li class="nav-item"><a class="nav-link active" id="hod-tab" data-toggle="tab" href="#hod" role="tab">Message from HOD</a></li>
-            <li class="nav-item"><a class="nav-link " id="faculty-tab" data-toggle="tab" href="#faculty" role="tab">Faculty</a></li>
-            <li class="nav-item"><a class="nav-link " id="vision-tab" data-toggle="tab" href="#vision" role="tab">Vision</a></li>
-            <li class="nav-item"><a class="nav-link" id="mission-tab" data-toggle="tab" href="#mission" role="tab">Mission</a></li>
-            <li class="nav-item"><a class="nav-link" id="outcomes-tab" data-toggle="tab" href="#outcomes" role="tab">Course Outcomes</a></li>
-            <li class="nav-item"><a class="nav-link" id="labs-tab" data-toggle="tab" href="#labs" role="tab">Laboratory Facilities</a></li>
-            <li class="nav-item"><a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link active" id="hod-tab" data-bs-toggle="tab" href="#hod" role="tab">Message from HOD</a></li>
+            <li class="nav-item"><a class="nav-link " id="faculty-tab" data-bs-toggle="tab" href="#faculty" role="tab">Faculty</a></li>
+            <li class="nav-item"><a class="nav-link " id="vision-tab" data-bs-toggle="tab" href="#vision" role="tab">Vision</a></li>
+            <li class="nav-item"><a class="nav-link" id="mission-tab" data-bs-toggle="tab" href="#mission" role="tab">Mission</a></li>
+            <li class="nav-item"><a class="nav-link" id="outcomes-tab" data-bs-toggle="tab" href="#outcomes" role="tab">Course Outcomes</a></li>
+            <li class="nav-item"><a class="nav-link" id="labs-tab" data-bs-toggle="tab" href="#labs" role="tab">Laboratory Facilities</a></li>
+            <li class="nav-item"><a class="nav-link" id="gallery-tab" data-bs-toggle="tab" href="#gallery" role="tab">Gallery</a></li>
 
         </ul>
     </nav>

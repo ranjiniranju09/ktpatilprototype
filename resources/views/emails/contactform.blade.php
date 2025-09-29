@@ -74,22 +74,17 @@
 <body>
     <div class="container">
         <h2>New Contact Form Submission</h2>
+            <p><strong>Name:</strong> {{ $formData['name'] }}</p>
+            <p><strong>Email:</strong> {{ $formData['email'] }}</p>
+            <p><strong>Phone:</strong> {{ $formData['phone'] }}</p>
+            <p><strong>City:</strong> {{ $formData['city'] }}</p>
+            <p><strong>Program:</strong> {{ $formData['program'] }}</p>
+            <p><strong>State:</strong> {{ $formData['state'] }}</p>
+            <p><strong>Message:</strong> {{ $formData['message'] }}</p>
 
-        <p><span class="label">Name:</span> {{ $data['name'] }}</p>
-        <p><span class="label">Email:</span> {{ $data['email'] }}</p>
-        <p><span class="label">Phone:</span> {{ $data['phone'] }}</p>
-        <p><span class="label">City:</span> {{ $data['city'] }}</p>
-        <p><span class="label">State:</span> {{ $data['state'] }}</p>
-        <p><span class="label">Program:</span> {{ $data['program'] }}</p>
-
-        <p><span class="label">Message:</span></p>
-        <div class="message-box">
-            {{ $data['message'] }}
-        </div>
-
-        <div class="footer">
-            Submitted on {{ now()->format('F j, Y, g:i A') }}
-        </div>
+            <div class="footer">
+                Submitted on {{ now()->format('F j, Y, g:i A') }}
+            </div>
     </div>
 </body>
 </html>

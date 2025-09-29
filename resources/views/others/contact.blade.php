@@ -130,7 +130,7 @@
         @endif
 
 
-        <form method="POST" action="{{ route('contact.show') }}" target="_blank">
+        <form method="POST" action="{{ route('contact.submit') }}" target="_blank">
 
 
             @csrf

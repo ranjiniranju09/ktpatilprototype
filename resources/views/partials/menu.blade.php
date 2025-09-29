@@ -178,9 +178,9 @@
                         <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="{{ route('department') }}">Departments</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ route('computer') }}">Computer</a></li>
-                                <li><a class="dropdown-item" href="{{ route('eee') }}">Electrical & Electronics</a></li>
-                                <li><a class="dropdown-item" href="{{ route('mechanical') }}">Mechanical</a></li>
+                                <li><a class="dropdown-item" href="{{ route('computer') }}">Computer Science Engineering</a></li>
+                                <li><a class="dropdown-item" href="{{ route('eee') }}">Electrical & Electronics Engineering</a></li>
+                                <li><a class="dropdown-item" href="{{ route('mechanical') }}">Mechanical Engineering </a></li>
                                 <li><a class="dropdown-item" href="{{ route('electronics') }}">Electronics & Telecommunication</a></li>
                                 <li><a class="dropdown-item" href="{{ route('civil') }}">Civil Engineering</a></li>
                             </ul>
