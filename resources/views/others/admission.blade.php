@@ -211,28 +211,28 @@
                         <tr>
                             <th>Program</th>
                             <th>Annual Tuition Fee</th>
-                            <th>Other Charges</th>
+                            <th>Development fees</th>
                             <th>Total (Per Year)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>B.Tech</td>
-                            <td>₹85,000</td>
-                            <td>₹15,000</td>
+                            <td>B.E</td>
+                            <td>₹45,558</td>
+                            <td>₹4,442</td>
+                            <td>₹48,000</td>
+                        </tr>
+                        <tr>
+                            <td>M.E</td>
+                            <td>₹90,909</td>
+                            <td>₹9,091</td>
                             <td>₹1,00,000</td>
                         </tr>
                         <tr>
-                            <td>M.Tech</td>
-                            <td>₹95,000</td>
-                            <td>₹20,000</td>
-                            <td>₹1,15,000</td>
-                        </tr>
-                        <tr>
-                            <td>MBA</td>
-                            <td>₹1,20,000</td>
-                            <td>₹25,000</td>
-                            <td>₹1,45,000</td>
+                            <td>Diploma</td>
+                            <td>₹40,500</td>
+                            <td>₹4,500</td>
+                            <td>₹45,000</td>
                         </tr>
                     </tbody>
                 </table>

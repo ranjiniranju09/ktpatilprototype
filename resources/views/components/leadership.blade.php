@@ -108,7 +108,7 @@
       <a href="{{ route('leadership') }}" class="image-wrapperleadership">
         <img class="founder-img" src="{{ asset('images/president.jpg') }}" alt="Dr. Vijay D. Patil - Founder Chancellor" />
         <div class="text-contentleadership">
-          <div class="name-textleadership">Dr. Vijay D. Patil</div>
+          <div class="name-textleadership">Mr. Sudhir Keshavrao Patil</div>
           <div class="designation-textleadership">Founder Chancellor</div>
         </div>
       </a>
